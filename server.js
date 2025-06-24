@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const config = {
-  geminiApiKey: "AIzaSyDbQfrKP650QopuMKksSvpsfUrJ8kwGlFA"
+  geminiApiKey: "Your_Api_key"
 };
 
 async function convertNLToMongoQuery(nlQuery) {
@@ -38,7 +38,7 @@ NL Query: ${nlQuery}
 }
 
 const dbdetails = {
-  mongoUri: 'mongodb+srv://aks:aks@cluster0.bptf95x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+  mongoUri: 'YOUR_MONGO_API',
   dbName: 'CSV_Analyzer',
   collectionName: 'CSV_Analyzer2',
 };
